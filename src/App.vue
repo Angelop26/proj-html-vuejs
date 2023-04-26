@@ -1,26 +1,29 @@
 <script>
-import AppFooterVue from './components/AppFooter.vue';
-import AppHeaderVue from './components/AppHeader.vue';
-import AppMainVue from './components/AppMain.vue';
+import AppFooter from './components/AppFooter.vue';
+import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
 import {store} from './store';
 export default{
   components:{
-    AppHeaderVue,
-    AppMainVue,
-    AppFooterVue
+    AppHeader,
+    AppMain,
+    AppFooter
   },
   data(){
     return{
       store
     }
+  },
+  methods:{
+
   }
 }
 </script>
 
 <template>
-<AppHeaderVue />
-<AppMainVue />
-<AppFooterVue />
+<AppHeader :logo="store.headerLogo" :menu="store.headerMenu"/>
+<AppMain />
+<AppFooter />
 </template>
 
 <style lang="scss">
