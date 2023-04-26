@@ -31,5 +31,6 @@ export const store = reactive({
             img:'envelope.png',
             text:'Contact'
         },
-    ]
+    ],
+    jumboImg:['slider_slide3_img1.png','slider_slide3_img2.png','slider_slide3_img3.png']
 })
