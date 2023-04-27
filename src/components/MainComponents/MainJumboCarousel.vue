@@ -19,7 +19,7 @@ export default{
         <div class="container-img">
             <img :src="MainGetImagePath(elem)" alt="" v-for="(elem,index) in store.jumboImg" :key="index">
         </div>
-        <div class="buttons">
+        <div class="jumbobuttons">
             <div class="button"></div>
             <div class="button"></div>
             <div class="button"></div>
@@ -39,19 +39,6 @@ export default{
             padding-top: 2rem;
         }
     }
-    .buttons{
-        padding: 1rem;
-        @include flex(row,center,center);
-        .button{
-            width: 75px;
-            height: 25px;
-            border: 2px solid #fe6601;
-            margin-right: 10px;
-            margin-top: 1.2rem;
-            &:hover{
-                margin-top: 0;
-            }
-        }
-    }
+
 }
 </style>

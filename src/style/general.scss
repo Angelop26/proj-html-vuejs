@@ -31,3 +31,18 @@ img{
     }
 
 }
+
+.jumbobuttons{
+    padding: 1rem;
+    @include flex(row,center,center);
+    .button{
+        width: 75px;
+        height: 25px;
+        border: 2px solid #fe6601;
+        margin-right: 10px;
+        margin-top: 1.2rem;
+        &:hover{
+            margin-top: 0;
+        }
+    }
+}
