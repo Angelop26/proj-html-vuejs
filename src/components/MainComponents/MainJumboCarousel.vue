@@ -1,17 +1,14 @@
 <script>
 import {store} from '../../store';
+import { MainGetImagePath } from '../../helper';
 export default{
     name:'MainJumboCarousel',
     data(){
         return{
-            store
+            store,
+            MainGetImagePath
         }
     },
-    methods:{
-        getImagePath(img){
-            return new URL(`../../assets/img/${img}`, import.meta.url).href
-        }
-    }
 }
 </script>
 
@@ -20,7 +17,7 @@ export default{
     <div class="container">
 
         <div class="container-img">
-            <img :src="getImagePath(elem)" alt="" v-for="(elem,index) in store.jumboImg" :key="index">
+            <img :src="MainGetImagePath(elem)" alt="" v-for="(elem,index) in store.jumboImg" :key="index">
         </div>
         <div class="buttons">
             <div class="button"></div>
