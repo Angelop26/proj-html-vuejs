@@ -57,9 +57,8 @@ export default{
 section{
     background-image: url('../../assets/img/parallax_01.jpg');
     background-position: center;
+    background-size: cover;
     .container{
-        width: 60%;
-        margin: 0 auto;
         padding-top: 2rem;
         .row{
             @include flex(row,center,center);

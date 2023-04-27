@@ -77,8 +77,6 @@ section {
     background-color: #e8e6e7;
 
     .container {
-        width: 60%;
-        margin: 0 auto;
         @include flex(row, center, flex-start);
         padding-top: 2rem;
         padding-bottom: 2rem;

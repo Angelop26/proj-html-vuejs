@@ -60,8 +60,6 @@ import { store } from '../../store';
 <style lang="scss" scoped>
 @use '../../style/partials/mixins' as*;
 .container{
-    width: 60%;
-    margin: 0 auto;
     ul{
         @include flex(row,center,center);
         li{

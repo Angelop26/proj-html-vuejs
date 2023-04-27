@@ -29,8 +29,6 @@ section{
     padding: 2rem 0;
     .container{
         @include flex(row,space-around,center);
-        width: 60%;
-        margin: 0 auto;
         h2{
             font-size: 2rem;
         }
