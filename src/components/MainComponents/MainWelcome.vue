@@ -35,24 +35,26 @@ import { store } from '../../store';
 </script>
 
 <template>
-    <div class="container">
-        <div class="upper-part">
-            <h2 class="upper-title">Welcome to Fable</h2>
-            <p class="upper-secondTitle">Fable daycare,preschool, and kindergarten</p>
-            <img class="upperImg" :src="MainGetImagePath(store.headerDivider)" alt="">
+    <section>
+        <div class="container">
+            <div class="upper-part">
+                <h2 class="upper-title">Welcome to Fable</h2>
+                <p class="upper-secondTitle">Fable daycare,preschool, and kindergarten</p>
+                <img class="upperImg" :src="MainGetImagePath(store.headerDivider)" alt="">
+            </div>
+            <div class="bottom-part">
+                <ul>
+                    <li v-for="(elem,index) in WelcomeCard" :key="index">
+                        <div class="containerImg" :class="[index % 2 === 0? 'orange':'violet' ]">
+                            <img :src="MainGetImagePath(elem.img)" alt="">
+                        </div>
+                        <h3>{{ elem.title }}</h3>
+                        <p>{{ elem.text }}</p>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="bottom-part">
-            <ul>
-                <li v-for="(elem,index) in WelcomeCard" :key="index">
-                    <div class="containerImg" :class="[index % 2 === 0? 'orange':'violet' ]">
-                        <img :src="MainGetImagePath(elem.img)" alt="">
-                    </div>
-                    <h3>{{ elem.title }}</h3>
-                    <p>{{ elem.text }}</p>
-                </li>
-            </ul>
-        </div>
-    </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>
