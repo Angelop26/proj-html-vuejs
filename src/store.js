@@ -34,4 +34,6 @@ export const store = reactive({
     ],
     jumboImg:['slider_slide3_img1.png','slider_slide3_img2.png','slider_slide3_img3.png'],
     headerDivider:'header_divider.png',
+    goToTop:'go_to_top.png',
+    accounts:['behance.png','dribbble.png','envato.png','facebook.png','twitter.png']
 })

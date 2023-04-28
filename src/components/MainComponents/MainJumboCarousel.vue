@@ -30,7 +30,7 @@ export default{
 
 <style lang="scss" scoped>
 @use '../../style/partials/mixins' as *;
-.container{
+section{
     background-image: url('../../assets/img/slider_slide3_background.png');
     background-repeat: repeat;
     .container-img{
