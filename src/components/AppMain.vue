@@ -7,6 +7,8 @@ import MainData from './MainComponents/MainData.vue';
 import mainClasses from './MainComponents/mainClasses.vue';
 import MainGoals from './MainComponents/MainGoals.vue';
 import MainAlbum from './MainComponents/MainAlbum.vue';
+import MainStaff from './MainComponents/MainStaff.vue';
+import mainComments from './MainComponents/mainComments.vue';
 export default{
     name:'AppMain',
     components:{
@@ -17,7 +19,9 @@ export default{
         MainData,
         mainClasses,
         MainGoals,
-        MainAlbum
+        MainAlbum,
+        MainStaff,
+        mainComments
     }
 }
 </script>
@@ -32,7 +36,8 @@ export default{
 <MainGoals />
 <MainAlbum />
 <MainCta :text="`See Our Kindergarten Photo Gallery! `" :ButtonText="`VIEW GALLERY`"/>
-
+<MainStaff />
+<mainComments />
 </template>
 
 <style lang="scss" scoped>
