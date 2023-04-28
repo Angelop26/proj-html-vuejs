@@ -122,10 +122,10 @@ export default {
     flex-wrap: wrap;
 
     .col {
-        width: calc(100% / 2 - 1rem);
-        margin-right: 1rem;
+        width: calc(100% / 2 - 2rem);
+        margin-right: 2rem;
         color: white;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
 
         .card {
             @include flex(row, center, stretch);
@@ -143,6 +143,7 @@ export default {
 
                     p {
                         padding: 5px 15px;
+                        font-size: .8rem;
                     }
 
                     p:first-child {
