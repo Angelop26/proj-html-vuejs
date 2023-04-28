@@ -20,7 +20,7 @@ export default {
 
 <template>
     <footer>
-        <div class="upper-part">
+        <div class="footer-upper-part">
 
             <div class="container">
                 <div class="row">
@@ -71,7 +71,7 @@ export default {
                 </div>
             </div>
         </div>
-        <div class="bottom-part">
+        <div class="footer-bottom-part">
             <a href="">
                 <img :src="MainGetImagePath(store.goToTop)" alt="" class="gototop">
             </a>
@@ -90,7 +90,7 @@ export default {
 <style lang="scss" scoped>
 @use '../style/partials/mixins' as *;
 
-.upper-part {
+.footer-upper-part {
     background-image: url('../assets/img/pattern.png');
 
     .container {
@@ -180,7 +180,7 @@ export default {
         }
     }
 }
-.bottom-part{
+.footer-bottom-part{
     position: relative ;
     padding-bottom: .3rem;
     a{
@@ -194,8 +194,7 @@ export default {
     }
     .small-container{
         width: 40%;
-        margin: 0 auto;
-        margin-bottom: 2rem;
+        margin: 2rem auto;
         ul{
             margin-bottom: 2rem;
             @include flex(row,center,center);

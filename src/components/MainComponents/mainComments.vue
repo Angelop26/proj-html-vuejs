@@ -70,8 +70,11 @@ section{
             font-size: 1.5rem;
         }
     }
-    .button{
-        border-color: white;
+    .jumbobuttons{
+        padding: 5rem;
+        .button{
+            border-color: white;
+        }
     }
 }
 </style>
